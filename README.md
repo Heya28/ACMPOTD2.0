@@ -30,8 +30,3 @@ ACMPOTD2.0/
 ## Progress
 
 Solutions will be added regularly as the POTD progresses.
-
----
-
-**ACM IGDTUW POTD 2.0**
-*One problem a day, one step at a time.*
