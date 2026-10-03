@@ -6,13 +6,11 @@ int main(){
     cin.tie(NULL);
     int n, m;
     cin>>n>>m;
-    vector<char> store;
-    store.reserve(m);
     bool iffalse=false;
     char prev='#';
     for(int i=0;i<n;i++){
         iffalse=false;
-        store.clear(); 
+        char first='$';
         for(int j=0;j<m;j++){
             char colour;
             cin>>colour;
@@ -21,13 +19,13 @@ int main(){
                     iffalse=true;
                     break;
                 }
+                first=colour;
                 prev=colour;
             }
-            if(!store.empty() && store.back()!=colour){
+            if(first=colour){
                 iffalse=true;
                 break;
             }
-            store.push_back(colour);
         }
         if(iffalse){
             break;
