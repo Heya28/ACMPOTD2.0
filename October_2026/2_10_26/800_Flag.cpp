@@ -22,7 +22,7 @@ int main(){
                 first=colour;
                 prev=colour;
             }
-            if(first=colour){
+            if(first!=colour){
                 iffalse=true;
                 break;
             }
